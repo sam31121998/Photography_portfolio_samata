@@ -1,0 +1,475 @@
+/* ========Common Class===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-image: url(https://img.freepik.com/free-vector/dark-black-background-design-with-stripes_1017-38064.jpg);
+    /* background-size: cover;
+ background-position: center; */
+    background-repeat: repeat;
+}
+
+
+.container {
+    width: 1400px;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===========================================Nav-Bar============================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(228, 228, 228);
+    padding: 1rem 1.5rem;
+}
+
+.nav-logo h1 {
+    color: rgb(0, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.navbar {
+    background-color: rgb(31, 31, 31);
+}
+
+.nav-menu {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding: 0 0.8rem;
+    gap: 5px;
+}
+
+.nav-menu::after {
+    content: "";
+    border-bottom: 1px solid white;
+}
+
+
+.nav-menu ul {
+    display: flex;
+}
+
+.nav-menu ul li {
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.nav-menu ul li a {
+    display: flex;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+.nav-menu ul li:hover {
+    color: aqua;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 5px 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    background-color: rgb(0, 255, 255);
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 255, 255);
+    transition: all 1s ease;
+    outline: none;
+    box-shadow: 0 0 15px 5px rgb(0, 255, 255);
+}
+
+/* ===========================================banner============================== */
+
+.col-6 {
+    width: 50%;
+}
+
+.banner-Image img {
+    width: 100%;
+    padding: 2rem 3rem;
+}
+
+.banner-content {
+    position: relative;
+    top: 10rem;
+    left: 4rem;
+    color: white;
+    padding: 2rem 4rem;
+
+
+}
+
+.banner-content h2 {
+    color: rgb(0, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: left;
+    filter: drop-shadow(0px 0px 4px rgb(0, 0, 0));
+    text-transform: uppercase;
+
+}
+
+
+
+.banner-content p {
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.btn-1 {
+    padding: 5px 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    background-color: rgb(0, 255, 255);
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+    gap: 5px;
+}
+
+.btn-1:hover {
+    color: rgb(0, 255, 255);
+    background-color: rgb(0, 4, 4);
+    transition: all 1s ease;
+    outline: none;
+    box-shadow: 0 0 10px 5px rgb(0, 255, 255);
+}
+
+
+
+.banner-Image-1 img {
+    width: 80%;
+    padding: 1rem;
+}
+
+.banner-content-1 {
+    position: relative;
+    top: 10rem;
+    color: white;
+    padding: 2rem 4rem;
+
+
+}
+
+.banner-content-1 h2 {
+    color: rgb(0, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: left;
+    filter: drop-shadow(0px 0px 4px rgb(0, 0, 0));
+    text-transform: uppercase;
+
+}
+
+
+
+.banner-content-1 ul li {
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.banner-content-1 p {
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+
+/* ===================================== Card  ============================== */
+
+.container-fluid h2 {
+    color: rgb(0, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    filter: drop-shadow(0px 0px 4px rgb(0, 0, 0));
+    text-transform: uppercase;
+
+}
+
+.about-2 p{
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding:0px 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 0 0 10px 3px rgb(0, 255, 255);
+
+}
+
+/* Styles for card image */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Styles for overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Styles for overlay text */
+.overlay-text {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* Hover effect for card */
+.card:hover img {
+    transform: scale(1.1);
+
+}
+
+/* Hover effect for overlay */
+.card:hover .overlay {
+    opacity: 1;
+}
+
+
+/* ===================================== Gallery  ============================== */
+
+/* Gallery container */
+/* Gallery container */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+/* Gallery item */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1%;
+    padding: 1%;
+    width: 31.33%;
+}
+
+/* Image inside gallery item */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid antiquewhite;
+
+}
+
+/* Overlay on hover */
+.gallery-item .overlay {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.6);
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, top 0.5s ease;
+}
+
+/* Text inside overlay */
+.gallery-item .overlay-text {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Animation on hover */
+.gallery-item:hover .overlay {
+    top: 0;
+    opacity: 1;
+}
+
+
+/* =====================================Contact  ============================== */
+
+.contact-form {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+
+  .contact-form input[type="text"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #0f0f0f;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .contact-form input[type="submit"] {
+    background-color: rgb(0, 255, 255);
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin:0 auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+
+  }
+
+  .contact-form input[type="submit"]:hover {
+    background-color:aqua;
+    box-shadow: 0 0 10px 3px rgb(0, 255, 255);
+    transition: all 1s ease;
+    
+  }
+ 
+
+/* =====================================Footer============================== */
+
+  .footer {
+    background-color: #151414;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    width:100%;
+
+  }
+
+  .footer-topic {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+    padding:5px 10px;
+    border-radius: 100%;
+    border: 2px solid aqua;
+    box-shadow: 0 0 10px 3px rgb(0, 255, 255);
+  }
+
+  .social-icons li a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 1s ease;
+ 
+  }
+
+  .social-icons li a:hover {
+    color:aqua;
+  }
